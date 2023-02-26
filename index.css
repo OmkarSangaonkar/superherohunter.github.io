@@ -1,0 +1,236 @@
+/* Google Fonts link to Orbitron */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+/* Basic page styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* font-family: sans-serif; */
+  font-family: "Orbitron", sans-serif;
+  background-color: #122023;
+  color: #fff;
+}
+
+/* Header styles */
+header {
+  background-color: #0ae0df;
+  padding: 1rem;
+}
+
+/* Styles for the navigation bar by setting  display to flex and adding flex propertise to give spacing 
+  and also putting max width of 1200px.
+*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styles for the h2 heading */
+h2 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Styles for the navigation links */
+nav a {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Styles for the navigation links on hover */
+nav a:hover {
+  color: rgb(255, 255, 255, 0.6);
+}
+
+/* Main content styles */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Set full width for home section */
+#home {
+  flex-basis: 100%;
+}
+
+/* Hide favourites section */
+#favourites {
+  display: none;
+}
+
+/* Style for main heading */
+h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 3rem;
+  margin: 0 0 2rem 0;
+}
+
+/* Style for search input field */
+#search-input {
+  border: none;
+  border-bottom: 2px solid #0ae0df;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  background-color: transparent;
+  color: #fff;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Style for placeholder text in search input field */
+#search-input::placeholder {
+  color: rgb(255, 255, 255, 0.6);
+}
+
+/* Style for search button */
+#search-button {
+  background-color: #0ae0df;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Hover style for search button */
+#search-button:hover {
+  background-color: rgb(10, 224, 223, 0.8);
+}
+
+/* Style for hero card */
+.hero-card {
+  flex-basis: calc(33.33% - 2rem);
+  margin: 1rem;
+  border: 2px solid #0ae0df;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Hover style for hero card */
+.hero-card:hover {
+  box-shadow: 0 0 20px 0 rgb(10, 224, 223, 0.8);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+/* Style for hero image */
+.hero-card img {
+  max-width: 40%;
+  height: auto;
+  display: inline-block;
+  object-fit: cover;
+  position: relative;
+  margin: 1.5rem;
+  /* border-radius: 50%; */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(0, 255, 255, 0.5),
+    0 0 15px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.5),
+    0 0 25px rgba(0, 255, 255, 0.5);
+}
+
+/* Style for hero card text */
+.hero-card p {
+  display: inline-block;
+  position: absolute;
+  max-width: 50%;
+  margin: 2rem;
+  align-content: end;
+}
+
+/* Style for hero card heading */
+.hero-card h2 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem;
+  margin: 0.5rem 1rem;
+}
+
+/* Styles for buttons */
+
+/* Base styles for all buttons */
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  margin: 10px; /* adds margin around the button */
+  padding: 10px; /* adds padding inside the button */
+}
+
+/* Icon styles for buttons */
+button i {
+  font-size: 24px; /* sets the size of the icon */
+  padding: 5px; /* adds padding around the icon */
+}
+
+/* Styles for 'Add to favorites' button */
+.add-favourites-button i {
+  color: #ccc; /* sets the color of the icon */
+  margin-right: 5px; /* adds margin to the right of the icon */
+  animation: spark 2s linear; /* applies the 'spark' animation to the icon */
+}
+
+/* Styles for 'View info' button */
+.view-info-button i {
+  color: #ccc; /* sets the color of the icon */
+  margin-right: 5px; /* adds margin to the right of the icon */
+}
+
+/* Styles for when hovering over the 'View info' button */
+.view-info-button:hover i {
+  text-shadow: 0 0 10px #fff; /* adds a white text-shadow effect to the icon */
+}
+
+/* Styles for when the 'View info' button is active */
+.view-info-button:active i {
+  animation: neon-pulse 0.5s ease-in-out; /* applies the 'neon-pulse' animation to the icon */
+}
+
+/* Keyframe animations */
+
+/* 'Spark' animation */
+@keyframes spark {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* 'Neon-pulse' animation */
+@keyframes neon-pulse {
+  0% {
+    text-shadow: 0 0 10px #fff;
+  }
+  50% {
+    text-shadow: 0 0 20px #fff;
+  }
+  100% {
+    text-shadow: 0 0 10px #fff;
+  }
+}

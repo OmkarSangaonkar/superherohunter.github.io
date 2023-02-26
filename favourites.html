@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Set the character encoding for the HTML document -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Add Font Awesome CSS library to the document -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Add the custom stylesheet for the Favourites page -->
+    <link rel="stylesheet" href="./favourites.css" />
+
+    <!-- Load the JavaScript file for the Favourites page -->
+    <script src="./favourites.js" defer></script>
+    <title>Favourites</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>Superhero Hunter</h2>
+        <!-- Add a link to the Home page -->
+        <a href="./index.html" id="home-link">Home</a>
+        <!-- Add a link to the Favourites page (the current page) -->
+        <a href="./favourites.html" id="favourites-link">Favourites</a>
+      </nav>
+    </header>
+
+    <!-- Create the Favourites section -->
+    <section id="favourites">
+      <h1>Favourites</h1>
+      <div id="favourites-list"></div>
+    </section>
+  </body>
+</html>

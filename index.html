@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Set character encoding and page title -->
+    <meta charset="UTF-8" />
+    <title>Superhero Hunter</title>
+
+    <!-- Link to Font Awesome stylesheet for icon fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Link to custom stylesheet for this page -->
+    <link rel="stylesheet" href="./index.css" />
+
+    <!-- Link to JavaScript file for this page -->
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- Main site heading -->
+        <h2>Superhero Hunter</h2>
+
+        <!-- Navigation links -->
+        <a href="#" id="home-link">Home</a>
+        <a href="./favourites.html" id="favourites-link">Favourites</a>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <!-- Main section heading -->
+        <h1>Superhero Hunter</h1>
+
+        <!-- Search input field -->
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search for a superhero..."
+        />
+
+        <!-- Search button -->
+        <button id="search-button">Search</button>
+
+        <!-- Container for displaying list of superheroes -->
+        <div id="heroes-list">
+          <!-- Template for a single hero card (hidden by default) -->
+          <div class="hero-card" style="display: none">
+            <img src="hero-image.jpg" alt="Hero Image" />
+            <div class="info">
+              <h2>Hero Name</h2>
+              <p>Hero Description</p>
+
+              <!-- Button for viewing more information about a hero -->
+              <button class="view-info-button">
+                <i class="fas fa-info-circle"></i>
+              </button>
+
+              <!-- Button for adding a hero to favourites -->
+              <button class="add-favourites-button">
+                <i class="fas fa-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section for displaying user's favourite superheroes (hidden by default) -->
+      <section id="favourites" style="display: none">
+        <h1>Favourites</h1>
+
+        <!-- Container for displaying list of favourite superheroes -->
+        <div id="favourites-list"></div>
+      </section>
+    </main>
+  </body>
+</html>

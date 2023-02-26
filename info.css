@@ -1,0 +1,96 @@
+/* Importing the Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,700;1,700&display=swap");
+
+/* Basic page styles */
+* {
+  box-sizing: border-box;
+}
+
+/* Setting styles for the body */
+body {
+  margin: 0;
+  /* font-family: sans-serif; */
+  font-family: "Marvel", sans-serif;
+  background-color: #122023;
+  color: #fff;
+}
+
+/* Setting styles for the header */
+header {
+  background-color: #0ae0df;
+  padding: 1rem;
+}
+
+/* Setting styles for the navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Setting styles for the heading in the navigation */
+h2 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Setting styles for the links in the navigation */
+nav a {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Setting hover styles for the links in the navigation */
+nav a:hover {
+  color: rgb(255, 255, 255, 0.6);
+}
+
+/* Main content styles */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; /* change from align-items: flex-start; */
+}
+
+/* Setting styles for the superhero information section */
+#superhero-info {
+  max-width: 800px;
+  width: 100%;
+  border: 2px solid #0ae0df; /* add border */
+  box-shadow: 0 0 20px 0 rgba(10, 224, 223, 0.8);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center the content inside #superhero-info */
+  text-align: center;
+}
+
+/* Setting hover styles for the superhero information section */
+#superhero-info:hover {
+  box-shadow: 0 0 20px 0 rgb(10, 224, 223, 0.8);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+/* Setting styles for the image in the superhero information section */
+#superhero-info img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 1.5rem;
+  border: 2px solid #0ae0df; /* add neon border */
+  border-radius: 5px;
+  box-shadow: 0 0 10px #0ae0df, 0 0 20px #0ae0df, 0 0 30px #0ae0df,
+    0 0 40px #0ae0df, 0 0 50px #0ae0df; /* add neon glow */
+}
